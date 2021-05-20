@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>IFrame responder</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/jquery.tinymce.min.js" referrerpolicy="origin"></script>
   <script>
     var targetOrigin = window.location.origin;
 
@@ -19,6 +22,12 @@
       }, targetOrigin);
     });
   </script>
+
+  <script>
+      $('#tinymce').attr( "role","textarea").attr("tabindex", "0").attr("aria-label", "LSAT essay text area, type here");
+  </script>
+
+
 </head>
 <body>
 </body>
