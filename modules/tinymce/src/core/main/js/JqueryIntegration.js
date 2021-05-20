@@ -345,6 +345,9 @@
       };
     });
 
+  
+
+
     // Makes sure that the editor instance gets properly destroyed when the parent element is removed
     $.each(["remove", "replaceWith", "replaceAll", "empty"], function (i, name) {
       var origFn = jQueryFn[name] = $.fn[name];
